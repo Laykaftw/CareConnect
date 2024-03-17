@@ -8,13 +8,6 @@ const LoginScreen = ({ navigation }) => {
     const [pass, setPass] = useState('');
     const [Id, setId] = useState(null);
 
-    const handleId =(selectedId) => {
-        if (selectedId) {
-            setId(selectedId);
-        } else {
-            console.error('No Account found for Data.');
-        }
-    };
     
     const handleLogin = () => {
         if(user === 'Admin' && pass === 'Admin'){

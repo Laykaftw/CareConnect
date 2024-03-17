@@ -21,7 +21,6 @@ db.transaction(tx => {
 //             id INTEGER PRIMARY KEY AUTOINCREMENT,
 //             Name TEXT,
 //             Phone TEXT,
-//             Email TEXT,
 //             Password TEXT,
 //         );`,
 //         [],
