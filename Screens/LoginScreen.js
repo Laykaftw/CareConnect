@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { TextInput, Button } from 'react-native-paper';
-import { getParentId, resetParent } from './Database';
+import { getParentId, resetParent } from '../Components/Database';
 
 const LoginScreen = ({ navigation }) => {
     const [user, setuser] = useState('');

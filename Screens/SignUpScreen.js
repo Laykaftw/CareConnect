@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Button, TextInput } from 'react-native-paper'
 import { SelectList } from 'react-native-dropdown-select-list'
 import * as DocumentPicker from 'expo-document-picker';
-import { addParent } from './Database';
+import { addParent } from '../Components/Database';
 
 const SignUpScreen = ({ navigation }) => {
     const [user, setUser] = useState('');
@@ -75,7 +75,6 @@ const SignUpScreen = ({ navigation }) => {
                     boxStyles={{ margin: 20, padding: 10, borderColor: '#367CFF', borderRadius: 15, alignItems: 'center' }}
                     dropdownStyles={{ borderColor: '#367CFF' }}
                 />
-
                 {selectedRole === 'Babysitter' && (
                     <View style={styles.container}>
                         <Text>To ensure security you have to upload your resume and experiences</Text>
@@ -87,7 +86,6 @@ const SignUpScreen = ({ navigation }) => {
                         >Upload</Button>
                     </View>
                 )}
-
                 <Button
                     style={{ width: 200, height: 50, alignContent: 'center' }}
                     buttonColor='#367CFF'

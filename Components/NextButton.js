@@ -60,7 +60,6 @@ export default function NextButton({ percentage, scrollTo }) {
                     />
                 </G>
             </Svg>
-
             <TouchableOpacity onPress={scrollTo} style={styles.button} activeOpacity={0.6}>
                 <AntDesign name="arrowright" size={32} color="#fff" />
             </TouchableOpacity>
